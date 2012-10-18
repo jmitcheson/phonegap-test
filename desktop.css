@@ -1,0 +1,13 @@
+body {
+    text-align: center;	
+}
+
+input[type=text] {
+	width: 350px;
+}
+
+.btn {
+	position: fixed;
+	top: 60px;
+	margin-left: 10px;	
+}
