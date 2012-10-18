@@ -62,7 +62,7 @@ var appjet = (function(){
 								appjet.safelyLoadEnd();
 							}
 						}).error(function(jqXHR, textStatus, errorThrown){
-							alert('error making ajax call to backend' + textStatus + errorThrown);
+							window.alert('error making ajax call to backend' + textStatus + errorThrown);
 						});
 					}
 					return this;
@@ -115,8 +115,7 @@ document.addEventListener("deviceready", function(){
         
 		$().server(data, function(data){
 			if(validate(data)) {
-				var a = shopping.queryProducts(data.query);
-				return a.items;
+				return shopping.queryProducts(data.query).items;
 			} else {
 				return [{}];
 			}
@@ -124,7 +123,7 @@ document.addEventListener("deviceready", function(){
 				return (data && data.query && data.query != '' && data.query.length<20);
 			}
     	}).complete(function(result) {
-            console.log("Product data received.");
+    		window.alert("Inserting " + result.length + " products");
             $(".products").empty();
             $(result).each(function(index, product){
                 insert(product);
