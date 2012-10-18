@@ -1,4 +1,3 @@
-window.alert('js');
 document.addEventListener("deviceready", function(){
     
      console.log("Executing document ready.");
@@ -63,4 +62,4 @@ document.addEventListener("deviceready", function(){
 		$(".products").append(container);
 
 	}
-}, f);
+}, false);
