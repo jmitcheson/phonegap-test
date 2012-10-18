@@ -1,3 +1,5 @@
+window.alert('working');
+
 var appjet = (function(){
 	
 	return {
@@ -70,8 +72,8 @@ var appjet = (function(){
 			});
 			
 			function resolveDomain() {
-				if(window.PhoneGap) {
-					domain = "http://www.pixeljet.net/";
+				if(window.cordova) {
+					domain = "http://regression.pixeljet.net/";
 				} else {
 					var host = window.location.hostname;
 					domain = "http://" + host + "/";
@@ -81,6 +83,7 @@ var appjet = (function(){
 			function resolveEndpoints() {
 				resolveDomain();
 				endpoint = domain + "script/execute";
+				window.alert('using endpoint ' + endpoint);
 			}
 		}
 	}
