@@ -18,7 +18,7 @@ document.addEventListener("deviceready", function(){
         }
         
         var data = { query : query };
-        console.log("Requesting product data.", data);
+        console.log("Requesting product data");
         
 		$().server(data, function(data){
 			if(validate(data)) {
