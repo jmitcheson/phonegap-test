@@ -1,3 +1,4 @@
+window.alert('js');
 document.addEventListener("deviceready", function(){
     
      console.log("Executing document ready.");
