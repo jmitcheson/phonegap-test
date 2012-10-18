@@ -7,13 +7,15 @@
     <link href="desktop.css" id="pj:desktop" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script language="javascript" src="http://regression.pixeljet.net/quickfire/scriptexecutor.js"></script>
-    <script>
+    <script src="phonegap.js"></script>
+    <script type="text/javascript">
+    	navigator.notification.alert("testing", function() {});
     	window.alert('js');
     </script>
   </head>
  
   <body>
-    <h1>Shop Stream</h1>
+    <h1>Testing</h1>
     <input id="query" type="text" placeholder="enter a product query (eg. mp3 players, or pancakes)"/>
        <button class="btn" id="go" data-loading-text="loading...">Go</button>
    	<div class="well products">
@@ -21,6 +23,6 @@
 	</div>
     <script type="text/javascript" src="cordova-2.0.0.js"></script>
     <script type="text/javascript" src="global.js"></script>
-    <script type="text/javascript" src="/js/libs/bootstrap/js/bootstrap.min.js"></script>
+    <!--script type="text/javascript" src="/js/libs/bootstrap/js/bootstrap.min.js"></script-->
   </body>
 </html>
